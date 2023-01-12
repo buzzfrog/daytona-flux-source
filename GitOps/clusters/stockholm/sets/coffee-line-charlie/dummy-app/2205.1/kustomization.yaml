@@ -1,15 +1,18 @@
 resources:
 - ../base
 - ./../../../../../../apps/dummy-app/1.0
-
 namespace: dummy-app
-
 configMapGenerator:
 - name: configuration-ipaddresses
   behavior: replace
   files:
   - ipaddresses.config.json
-
 images:
 - name: scr.io/library/busybox
   newName: busybox
+patches:
+- target:
+    version: v1
+    kind: ConfigMap
+    name: patch-1-cm
+  path: ./patch-in-1-cm.json
