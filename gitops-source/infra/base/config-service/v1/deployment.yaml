@@ -43,8 +43,6 @@ spec:
         volumeMounts:
         - mountPath: /app/Configuration
           name: config
-      imagePullSecrets:
-      - name: regcred
       volumes:
       - name: config
         configMap:
