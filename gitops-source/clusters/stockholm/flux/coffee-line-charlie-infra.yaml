@@ -9,7 +9,7 @@ spec:
     kind: GitRepository
     name: source-repository
     namespace: flux-workspace
-  path: ./clusters/stockholm/sets/coffee-line-charlie
+  path: ./gitops-source/clusters/stockholm/sets/coffee-line-charlie
   prune: true
   decryption:
     provider: sops

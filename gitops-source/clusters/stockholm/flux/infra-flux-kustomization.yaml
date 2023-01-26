@@ -9,7 +9,7 @@ spec:
     kind: GitRepository
     name: source-repository
     namespace: flux-workspace
-  path: ./clusters/stockholm/infra
+  path: ./gitops-source/clusters/stockholm/infra
   prune: true
   decryption:
     provider: sops
